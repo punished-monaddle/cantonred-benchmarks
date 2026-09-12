@@ -441,6 +441,57 @@
       }
     },
     {
+      "comparison_key": "7b7d482b88c5189548de97cb8356a8f4d9c672c4e0c13ae76cbaa9cf1b9d5634",
+      "errors": [],
+      "instrumentation": "uninstrumented",
+      "limitations": [
+        "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
+        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+      ],
+      "metrics": {
+        "completed_count": 1800,
+        "cpu_seconds": 41.483496292,
+        "elapsed_seconds": 13.794,
+        "latency_ms": {
+          "count": 1886,
+          "max": 1293,
+          "mean": 714.66967126193,
+          "p50": 662,
+          "p95": 1198,
+          "p99": 1250
+        },
+        "sampled_peak_rss_bytes": 1258815488,
+        "throughput_per_second": 130.49151805132666
+      },
+      "outcome": "pass",
+      "preset": null,
+      "previous_compatible_run": null,
+      "recorded_at": "2026-09-12T04:52:57.760000Z",
+      "revision": "3f05b861d95afd5082745622cfe40ed471e68d4c",
+      "run_id": "00000032_20260912T204411.464610Z_scala_uninstrumented",
+      "scenario": "dvp",
+      "synchronizer": "scala",
+      "throughput_change_percent": null,
+      "validation": "revalidated",
+      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+      "workload": {
+        "assets": 200,
+        "cut_factor": 0.9,
+        "cycles": 600,
+        "increase_threshold": 0.75,
+        "load_mode": "adaptive",
+        "start_pending": 5.0,
+        "step_factor": 0.03,
+        "target_latency_ms": 1000,
+        "target_latency_tolerance": 0.05,
+        "warmup_cycles": 120
+      }
+    },
+    {
       "comparison_key": "b84319ecfe0b70033f254e19b9372c31c6116640c8019aca5fefa2e3fd328e2e",
       "errors": [],
       "instrumentation": "instrumented",
