@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>00000012_20260912T161539.657498Z_rust_uninstrumented</title><style>body{font:16px system-ui;max-width:1200px;margin:40px auto;padding:0 24px;color:#182431;background:#f7f9fc}
+table{border-collapse:collapse;width:100%;background:white;margin:20px 0}td,th{padding:10px;border-bottom:1px solid #dde3ed;text-align:left}
+a{color:#175caf}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:16px}svg{background:white;width:100%;max-height:240px}
+small{color:#526174}details{margin:16px 0}.bad{color:#ac2430}</style><h1>00000012_20260912T161539.657498Z_rust_uninstrumented</h1><p><a href="../index.html">← All runs</a></p><p>Scala participants with Scala or Rust synchronizers. All archived attempts are shown, including failures. Instrumented runs are diagnostic. Compatible workload, host and harness cohorts stay separate; charts are descriptive, not statistical significance claims.</p><p>Published summaries omit raw logs, machine names and local paths. Full evidence remains in the private local archive. DvP latency measures Ledger commands/batches, not individual trades. CPU and RSS cover the synchronizer, excluding participants and PostgreSQL.</p><p><strong>pass</strong> · rust · uninstrumented</p><h2>Metrics</h2><pre>{
+  &quot;completed_count&quot;: 501,
+  &quot;cpu_seconds&quot;: 5.706020959,
+  &quot;elapsed_seconds&quot;: 5.125,
+  &quot;latency_ms&quot;: {
+    &quot;count&quot;: 552,
+    &quot;max&quot;: 732,
+    &quot;mean&quot;: 416.4855072463768,
+    &quot;p50&quot;: 420,
+    &quot;p95&quot;: 622,
+    &quot;p99&quot;: 674
+  },
+  &quot;sampled_peak_rss_bytes&quot;: 70008832,
+  &quot;throughput_per_second&quot;: 97.7560975609756
+}</pre><h2>Workload</h2><pre>{
+  &quot;assets&quot;: 200,
+  &quot;cut_factor&quot;: 0.9,
+  &quot;cycles&quot;: 167,
+  &quot;increase_threshold&quot;: 0.75,
+  &quot;load_mode&quot;: &quot;adaptive&quot;,
+  &quot;start_pending&quot;: 5.0,
+  &quot;step_factor&quot;: 0.03,
+  &quot;target_latency_ms&quot;: 1000,
+  &quot;target_latency_tolerance&quot;: 0.05,
+  &quot;warmup_cycles&quot;: 120
+}</pre><h2>Errors</h2><pre>[]</pre><h2>Limitations</h2><pre>[
+  &quot;Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.&quot;,
+  &quot;Separate warmup ceremony; measured setup excluded using upstream mode transitions.&quot;,
+  &quot;CPU counters bracket logged boundaries with at most250ms extra at each edge.&quot;,
+  &quot;Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.&quot;,
+  &quot;Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.&quot;,
+  &quot;Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions.&quot;
+]</pre><h2>Validation Scope</h2><pre>&quot;Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.&quot;</pre><h2>Revision</h2><pre>&quot;a7dffa4ee9b0a1a3a9012196e4cd05b5a39eb534&quot;</pre><h2>Comparison Key</h2><pre>&quot;87500c0179dfc67ba7fb228f042109eccb5698cbec410563334f188cb5e3652e&quot;</pre></html>

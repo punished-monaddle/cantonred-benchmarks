@@ -1,0 +1,30 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>00000002_20260912T150811.658149Z_scala_uninstrumented</title><style>body{font:16px system-ui;max-width:1200px;margin:40px auto;padding:0 24px;color:#182431;background:#f7f9fc}
+table{border-collapse:collapse;width:100%;background:white;margin:20px 0}td,th{padding:10px;border-bottom:1px solid #dde3ed;text-align:left}
+a{color:#175caf}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:16px}svg{background:white;width:100%;max-height:240px}
+small{color:#526174}details{margin:16px 0}.bad{color:#ac2430}</style><h1>00000002_20260912T150811.658149Z_scala_uninstrumented</h1><p><a href="../index.html">← All runs</a></p><p>Scala participants with Scala or Rust synchronizers. All archived attempts are shown, including failures. Instrumented runs are diagnostic. Compatible workload, host and harness cohorts stay separate; charts are descriptive, not statistical significance claims.</p><p>Published summaries omit raw logs, machine names and local paths. Full evidence remains in the private local archive. DvP latency measures Ledger commands/batches, not individual trades. CPU and RSS cover the synchronizer, excluding participants and PostgreSQL.</p><p><strong>pass</strong> · scala · uninstrumented</p><h2>Metrics</h2><pre>{
+  &quot;completed_count&quot;: 90,
+  &quot;cpu_seconds&quot;: 11.171516209,
+  &quot;elapsed_seconds&quot;: 35.639,
+  &quot;latency_ms&quot;: {
+    &quot;count&quot;: 115,
+    &quot;max&quot;: 398,
+    &quot;mean&quot;: 370.3391304347826,
+    &quot;p50&quot;: 372,
+    &quot;p95&quot;: 395,
+    &quot;p99&quot;: 397
+  },
+  &quot;sampled_peak_rss_bytes&quot;: 1145896960,
+  &quot;throughput_per_second&quot;: 2.5253233816885996
+}</pre><h2>Workload</h2><pre>{
+  &quot;assets&quot;: 20,
+  &quot;cycles&quot;: 30,
+  &quot;rate&quot;: 1.0,
+  &quot;warmup_cycles&quot;: 12
+}</pre><h2>Errors</h2><pre>[]</pre><h2>Limitations</h2><pre>[
+  &quot;Fixed-rate batches per trader; batch size3; completed trades counted from ledger.&quot;,
+  &quot;Separate warmup ceremony; measured setup excluded using upstream mode transitions.&quot;,
+  &quot;CPU counters bracket logged boundaries with at most250ms extra at each edge.&quot;,
+  &quot;Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.&quot;,
+  &quot;Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.&quot;,
+  &quot;Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions.&quot;
+]</pre><h2>Validation Scope</h2><pre>&quot;Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.&quot;</pre><h2>Revision</h2><pre>&quot;b9ccc41d12485edbba159b19c365fc476abfbbcc&quot;</pre><h2>Comparison Key</h2><pre>&quot;4d514dd22c521097f1b01aab554583ba7d1ffd0520b9bdc7db74384d7d8ccd00&quot;</pre></html>
