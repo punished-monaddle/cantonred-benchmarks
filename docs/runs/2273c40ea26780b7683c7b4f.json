@@ -55,5 +55,69 @@
       "Preset labels differ or are absent on the historical run; resolved workload settings match."
     ],
     "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+  },
+  "test_source": {
+    "schema_version": 1,
+    "collection": "archived-hash-verification",
+    "files": [
+      {
+        "role": "Test scenario",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "3a2269a4303c456995f367470d090c72d9e23447",
+        "path": "tests/performance/dvp-scenario.canton",
+        "sha256": "7e480b7f2eaec20249394c1f47707e2e45163daebe24a9b0a7e3f961303f1cbe",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/3a2269a4303c456995f367470d090c72d9e23447/tests/performance/dvp-scenario.canton"
+      },
+      {
+        "role": "Test harness",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "3a2269a4303c456995f367470d090c72d9e23447",
+        "path": "tests/performance/dvp_run.py",
+        "sha256": "aa3bc7b2d3ba795cd94a6df0181cd05cc2b11e59995971407eabd4d7f44732d7",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/3a2269a4303c456995f367470d090c72d9e23447/tests/performance/dvp_run.py"
+      },
+      {
+        "role": "Scenario generator",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "3a2269a4303c456995f367470d090c72d9e23447",
+        "path": "tests/performance/dvp_workload.py",
+        "sha256": "35f029c88efdb312e51ab8296f03fecdc2fdc08a58866246f8b9627911ba4356",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/3a2269a4303c456995f367470d090c72d9e23447/tests/performance/dvp_workload.py"
+      },
+      {
+        "role": "Scala workload driver",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala",
+        "sha256": "ea2a81a58a99a0888ae91c6b78607b0e8e103d283a24063b29f97b1bafb892d7",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala"
+      },
+      {
+        "role": "Scala performance runner",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala",
+        "sha256": "d79e2507aefe11392126cc736ea69e11f085bc35bf5ea6de41edf8715f8944bd",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala"
+      },
+      {
+        "role": "Daml trade model",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/daml/main/Dvp/Trade.daml",
+        "sha256": "1ea32b58390949600e10cadb090f6e10a70068e6f8f3b5af5ec8c31f9c81b49a",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/daml/main/Dvp/Trade.daml"
+      }
+    ],
+    "rendered_script": {
+      "filename": "workload.canton",
+      "sha256": "ce411918e18f9992690342a28b22eb41678e475c1eed60c106ba67a2ae46dbd3"
+    }
   }
 }

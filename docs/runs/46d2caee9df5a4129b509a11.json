@@ -40,5 +40,69 @@
     "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
   ],
   "errors": [],
-  "scala_baseline": null
+  "scala_baseline": null,
+  "test_source": {
+    "schema_version": 1,
+    "collection": "archived-hash-verification",
+    "files": [
+      {
+        "role": "Test scenario",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
+        "path": "tests/performance/dvp-scenario.canton",
+        "sha256": "f9e693892a300ce6973205b9dba5ea77bf3ca3b8747903d66615521ea5617f64",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/b9ccc41d12485edbba159b19c365fc476abfbbcc/tests/performance/dvp-scenario.canton"
+      },
+      {
+        "role": "Test harness",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
+        "path": "tests/performance/dvp_run.py",
+        "sha256": "8af19b27073007c91dc4e7f26c9ce171ad561195976ee88222b2e8ca00ef4426",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/b9ccc41d12485edbba159b19c365fc476abfbbcc/tests/performance/dvp_run.py"
+      },
+      {
+        "role": "Scenario generator",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
+        "path": "tests/performance/dvp_workload.py",
+        "sha256": "92f0df560a99321f4360af55b1ee37b2f6e164da5baeea2426a390e004f0d93e",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/b9ccc41d12485edbba159b19c365fc476abfbbcc/tests/performance/dvp_workload.py"
+      },
+      {
+        "role": "Scala workload driver",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala",
+        "sha256": "ea2a81a58a99a0888ae91c6b78607b0e8e103d283a24063b29f97b1bafb892d7",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala"
+      },
+      {
+        "role": "Scala performance runner",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala",
+        "sha256": "d79e2507aefe11392126cc736ea69e11f085bc35bf5ea6de41edf8715f8944bd",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala"
+      },
+      {
+        "role": "Daml trade model",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/daml/main/Dvp/Trade.daml",
+        "sha256": "1ea32b58390949600e10cadb090f6e10a70068e6f8f3b5af5ec8c31f9c81b49a",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/daml/main/Dvp/Trade.daml"
+      }
+    ],
+    "rendered_script": {
+      "filename": "workload.canton",
+      "sha256": "a7d5acd02bf8a440cdee00a1d6fc3492dd715209fd0276da5307ef419fe36345"
+    }
+  }
 }
