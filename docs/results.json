@@ -109,13 +109,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T00:45:56.850000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000001_20260912T150811.574291Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "paired",
+        "run_id": "00000002_20260912T150811.658149Z_scala_uninstrumented",
+        "scope": "Scala participants and Scala synchronizer with matching comparison configuration. Single observations; descriptive differences only."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -154,13 +158,12 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T00:47:18.550000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000002_20260912T150811.658149Z_scala_uninstrumented",
+      "scala_baseline": null,
       "scenario": "dvp",
       "synchronizer": "scala",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -199,13 +202,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T00:48:25.537000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000003_20260912T150811.732746Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "paired",
+        "run_id": "00000004_20260912T150811.799642Z_scala_uninstrumented",
+        "scope": "Scala participants and Scala synchronizer with matching comparison configuration. Single observations; descriptive differences only."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -244,13 +251,12 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T00:49:06.092000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000004_20260912T150811.799642Z_scala_uninstrumented",
+      "scala_baseline": null,
       "scenario": "dvp",
       "synchronizer": "scala",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -289,13 +295,12 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": "00000004_20260912T150811.799642Z_scala_uninstrumented",
       "recorded_at": "2026-09-12T00:49:48.799000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000005_20260912T150811.858192Z_scala_uninstrumented",
+      "scala_baseline": null,
       "scenario": "dvp",
       "synchronizer": "scala",
-      "throughput_change_percent": -6.325706594885605,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -334,13 +339,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": "00000003_20260912T150811.732746Z_rust_uninstrumented",
       "recorded_at": "2026-09-12T00:50:24.636000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000006_20260912T150811.917016Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "paired",
+        "run_id": "00000005_20260912T150811.858192Z_scala_uninstrumented",
+        "scope": "Scala participants and Scala synchronizer with matching comparison configuration. Single observations; descriptive differences only."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": -11.826002665697322,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -379,13 +388,12 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": "00000002_20260912T150811.658149Z_scala_uninstrumented",
       "recorded_at": "2026-09-12T00:51:19.273000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000007_20260912T150811.986064Z_scala_uninstrumented",
+      "scala_baseline": null,
       "scenario": "dvp",
       "synchronizer": "scala",
-      "throughput_change_percent": 2.058991981672409,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -424,13 +432,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": "00000001_20260912T150811.574291Z_rust_uninstrumented",
       "recorded_at": "2026-09-12T00:52:40.050000Z",
       "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
       "run_id": "00000008_20260912T150812.059461Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "paired",
+        "run_id": "00000007_20260912T150811.986064Z_scala_uninstrumented",
+        "scope": "Scala participants and Scala synchronizer with matching comparison configuration. Single observations; descriptive differences only."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": 2.2184447837736654,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -469,13 +481,12 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T04:52:57.760000Z",
       "revision": "3f05b861d95afd5082745622cfe40ed471e68d4c",
       "run_id": "00000032_20260912T204411.464610Z_scala_uninstrumented",
+      "scala_baseline": null,
       "scenario": "dvp",
       "synchronizer": "scala",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -520,13 +531,12 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T05:00:36.016000Z",
       "revision": "3d450c528520caeb862a25494a80b85d4d61774f",
       "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+      "scala_baseline": null,
       "scenario": "dvp",
       "synchronizer": "scala",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -540,100 +550,6 @@
         "target_latency_ms": 1000,
         "target_latency_tolerance": 0.05,
         "warmup_cycles": 120
-      }
-    },
-    {
-      "comparison_key": "dec81ba10fee8e2cfc58dc5a943e4918a65eb0f183da6136cf47fe15ef85ddc5",
-      "errors": [
-        "error: ValueError: Dangling, forward or cyclic invocation parent reference"
-      ],
-      "instrumentation": "instrumented",
-      "limitations": [
-        "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
-        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
-        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
-        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
-        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
-        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
-      ],
-      "metrics": {
-        "completed_count": 1800,
-        "cpu_seconds": 59.10380725,
-        "elapsed_seconds": 47.371,
-        "latency_ms": {
-          "count": 1940,
-          "max": 1164,
-          "mean": 959.8020618556701,
-          "p50": 988,
-          "p95": 1083,
-          "p99": 1121
-        },
-        "sampled_peak_rss_bytes": 62259200,
-        "throughput_per_second": 37.99793122374449
-      },
-      "outcome": "failure",
-      "preset": null,
-      "previous_compatible_run": null,
-      "recorded_at": "2026-09-12T05:02:17.285000Z",
-      "revision": "3d450c528520caeb862a25494a80b85d4d61774f",
-      "run_id": "00000010_20260912T150948.864214Z_rust_instrumented",
-      "scenario": "dvp",
-      "synchronizer": "rust",
-      "throughput_change_percent": null,
-      "validation": "revalidated",
-      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
-      "workload": {
-        "assets": 200,
-        "cut_factor": 0.9,
-        "cycles": 600,
-        "increase_threshold": 0.75,
-        "load_mode": "adaptive",
-        "start_pending": 5.0,
-        "step_factor": 0.03,
-        "target_latency_ms": 1000,
-        "target_latency_tolerance": 0.05,
-        "warmup_cycles": 120
-      }
-    },
-    {
-      "comparison_key": "0b6bea12e67efabccbba9d170d28d6a16fe744ec1232b897ead067f0022d9cad",
-      "errors": [
-        "error: ValueError: DvP participant workload failed; see client.log and canton.log",
-        "Offline validation: [Errno 2] No such file or directory: '[local path]'"
-      ],
-      "instrumentation": "uninstrumented",
-      "limitations": [
-        "Fixed-rate batches per trader; batch size3; completed trades counted from ledger.",
-        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
-        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
-        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
-        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
-        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
-      ],
-      "metrics": {
-        "completed_count": null,
-        "cpu_seconds": null,
-        "elapsed_seconds": null,
-        "latency_ms": {},
-        "sampled_peak_rss_bytes": null,
-        "throughput_per_second": null
-      },
-      "outcome": "failure",
-      "preset": null,
-      "previous_compatible_run": null,
-      "recorded_at": "2026-09-12T15:09:50.157933Z",
-      "revision": "2a732780b95b639ee1d4da18344e0bf46295793f",
-      "run_id": "00000011_20260912T150950.157802Z_scala_uninstrumented",
-      "scenario": "dvp",
-      "synchronizer": "scala",
-      "throughput_change_percent": null,
-      "validation": "incomplete",
-      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
-      "workload": {
-        "assets": 20,
-        "cycles": 6,
-        "rate": 1.0,
-        "warmup_cycles": 3
       }
     },
     {
@@ -665,13 +581,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T15:47:25.434000Z",
       "revision": "a7dffa4ee9b0a1a3a9012196e4cd05b5a39eb534",
       "run_id": "00000012_20260912T161539.657498Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -716,13 +636,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T15:52:13.177000Z",
       "revision": "d4cac1dab79ba1f1ff395ec790d040e800d99bce",
       "run_id": "00000020_20260912T161543.472816Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -767,13 +691,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T15:52:52.232000Z",
       "revision": "d4cac1dab79ba1f1ff395ec790d040e800d99bce",
       "run_id": "00000021_20260912T161543.952037Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -818,13 +746,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T15:58:15.391000Z",
       "revision": "c3941df60093e2e52a55b95c775377c85274f7e3",
       "run_id": "00000016_20260912T161541.567228Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -869,13 +801,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T15:58:54.245000Z",
       "revision": "c3941df60093e2e52a55b95c775377c85274f7e3",
       "run_id": "00000017_20260912T161542.048623Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -920,13 +856,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T16:02:25.810000Z",
       "revision": "8b6986fc9d826691a5ed915a7a40a3f6b4e89119",
       "run_id": "00000014_20260912T161540.604662Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -971,13 +911,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T16:03:01.972000Z",
       "revision": "8b6986fc9d826691a5ed915a7a40a3f6b4e89119",
       "run_id": "00000015_20260912T161541.083429Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1022,13 +966,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T16:06:58.068000Z",
       "revision": "dfb1b0c4b63ace679f1974a4d8b63b46e898da46",
       "run_id": "00000018_20260912T161542.517508Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1073,13 +1021,17 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T16:07:37.044000Z",
       "revision": "dfb1b0c4b63ace679f1974a4d8b63b46e898da46",
       "run_id": "00000019_20260912T161543.001745Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1124,67 +1076,23 @@
       },
       "outcome": "pass",
       "preset": null,
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T16:11:09.263000Z",
       "revision": "d4cd10f2892052e8865bc21b8e74f8caed5d3e6a",
       "run_id": "00000013_20260912T161540.136264Z_rust_uninstrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
         "assets": 200,
         "cut_factor": 0.9,
         "cycles": 167,
-        "increase_threshold": 0.75,
-        "load_mode": "adaptive",
-        "start_pending": 5.0,
-        "step_factor": 0.03,
-        "target_latency_ms": 1000,
-        "target_latency_tolerance": 0.05,
-        "warmup_cycles": 120
-      }
-    },
-    {
-      "comparison_key": "5a0982faa3898dc4f894943e630a064e56b6813e17bbed9264167471a43c4a10",
-      "errors": [
-        "Offline validation: [Errno 2] No such file or directory: '[local path]'",
-        "ValueError: Unrelated host load contaminated the run",
-        "Requested and observed instrumentation differ"
-      ],
-      "instrumentation": "uninstrumented",
-      "limitations": [
-        "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
-        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
-        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
-        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
-        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
-        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
-      ],
-      "metrics": {
-        "completed_count": null,
-        "cpu_seconds": null,
-        "elapsed_seconds": null,
-        "latency_ms": {},
-        "sampled_peak_rss_bytes": null,
-        "throughput_per_second": null
-      },
-      "outcome": "failure",
-      "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": null,
-      "recorded_at": "2026-09-12T16:23:11.978590Z",
-      "revision": "ab57680246e0821bf6ce111b2b1be866ed5922a6",
-      "run_id": "00000022_20260912T162311.979585Z_dvp-adaptive-v1_rust_instrumented",
-      "scenario": "dvp",
-      "synchronizer": "rust",
-      "throughput_change_percent": null,
-      "validation": "incomplete",
-      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
-      "workload": {
-        "assets": 200,
-        "cut_factor": 0.9,
-        "cycles": 600,
         "increase_threshold": 0.75,
         "load_mode": "adaptive",
         "start_pending": 5.0,
@@ -1223,13 +1131,21 @@
       },
       "outcome": "pass",
       "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": null,
       "recorded_at": "2026-09-12T16:26:56.445495Z",
       "revision": "7b66a4181ad43c29175829fc55370c0979d8e030",
       "run_id": "00000023_20260912T162656.446582Z_dvp-adaptive-v1_rust_instrumented",
+      "scala_baseline": {
+        "differences": [
+          "Host identity is not matched; historical runs may lack a recorded machine identity.",
+          "Harness provenance differs (3 input fingerprints); workload equivalence beyond the recorded settings is not established.",
+          "Preset labels differ or are absent on the historical run; resolved workload settings match."
+        ],
+        "kind": "historical",
+        "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+        "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": null,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1274,13 +1190,21 @@
       },
       "outcome": "pass",
       "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": "00000023_20260912T162656.446582Z_dvp-adaptive-v1_rust_instrumented",
       "recorded_at": "2026-09-12T16:29:10.961057Z",
       "revision": "24dfc358db968b3654465565ab6e57518f1f650d",
       "run_id": "00000024_20260912T162910.962706Z_dvp-adaptive-v1_rust_instrumented",
+      "scala_baseline": {
+        "differences": [
+          "Host identity is not matched; historical runs may lack a recorded machine identity.",
+          "Harness provenance differs (3 input fingerprints); workload equivalence beyond the recorded settings is not established.",
+          "Preset labels differ or are absent on the historical run; resolved workload settings match."
+        ],
+        "kind": "historical",
+        "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+        "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": 5.342937676166604,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1325,13 +1249,21 @@
       },
       "outcome": "pass",
       "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": "00000024_20260912T162910.962706Z_dvp-adaptive-v1_rust_instrumented",
       "recorded_at": "2026-09-12T16:31:29.955445Z",
       "revision": "74fcab66a41203f100aaeba6c2273d83d12f078a",
       "run_id": "00000025_20260912T163129.957045Z_dvp-adaptive-v1_rust_instrumented",
+      "scala_baseline": {
+        "differences": [
+          "Host identity is not matched; historical runs may lack a recorded machine identity.",
+          "Harness provenance differs (3 input fingerprints); workload equivalence beyond the recorded settings is not established.",
+          "Preset labels differ or are absent on the historical run; resolved workload settings match."
+        ],
+        "kind": "historical",
+        "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+        "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": 7.0614270386266,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1376,13 +1308,21 @@
       },
       "outcome": "pass",
       "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": "00000025_20260912T163129.957045Z_dvp-adaptive-v1_rust_instrumented",
       "recorded_at": "2026-09-12T16:33:34.958031Z",
       "revision": "3a2269a4303c456995f367470d090c72d9e23447",
       "run_id": "00000026_20260912T163334.959660Z_dvp-adaptive-v1_rust_instrumented",
+      "scala_baseline": {
+        "differences": [
+          "Host identity is not matched; historical runs may lack a recorded machine identity.",
+          "Harness provenance differs (3 input fingerprints); workload equivalence beyond the recorded settings is not established.",
+          "Preset labels differ or are absent on the historical run; resolved workload settings match."
+        ],
+        "kind": "historical",
+        "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+        "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": 8.191250090691437,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1427,13 +1367,21 @@
       },
       "outcome": "pass",
       "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": "00000026_20260912T163334.959660Z_dvp-adaptive-v1_rust_instrumented",
       "recorded_at": "2026-09-12T16:35:40.483395Z",
       "revision": "2b03b7b47b703771b1c0fa0dd0fb695f1d9989d8",
       "run_id": "00000027_20260912T163540.485075Z_dvp-adaptive-v1_rust_instrumented",
+      "scala_baseline": {
+        "differences": [
+          "Host identity is not matched; historical runs may lack a recorded machine identity.",
+          "Harness provenance differs (3 input fingerprints); workload equivalence beyond the recorded settings is not established.",
+          "Preset labels differ or are absent on the historical run; resolved workload settings match."
+        ],
+        "kind": "historical",
+        "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+        "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": -4.284722222222214,
       "validation": "revalidated",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
@@ -1478,161 +1426,22 @@
       },
       "outcome": "pass",
       "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": "00000027_20260912T163540.485075Z_dvp-adaptive-v1_rust_instrumented",
       "recorded_at": "2026-09-12T16:37:47.184108Z",
       "revision": "b86300717db1edd646cd1f6f2d0d785715e0dc76",
       "run_id": "00000028_20260912T163747.185822Z_dvp-adaptive-v1_rust_instrumented",
+      "scala_baseline": {
+        "differences": [
+          "Host identity is not matched; historical runs may lack a recorded machine identity.",
+          "Harness provenance differs (3 input fingerprints); workload equivalence beyond the recorded settings is not established.",
+          "Preset labels differ or are absent on the historical run; resolved workload settings match."
+        ],
+        "kind": "historical",
+        "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+        "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+      },
       "scenario": "dvp",
       "synchronizer": "rust",
-      "throughput_change_percent": 4.438642297650142,
       "validation": "revalidated",
-      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
-      "workload": {
-        "assets": 200,
-        "cut_factor": 0.9,
-        "cycles": 600,
-        "increase_threshold": 0.75,
-        "load_mode": "adaptive",
-        "start_pending": 5.0,
-        "step_factor": 0.03,
-        "target_latency_ms": 1000,
-        "target_latency_tolerance": 0.05,
-        "warmup_cycles": 120
-      }
-    },
-    {
-      "comparison_key": "546fde59f3a1e0213a3c18cbe56b350b3cd17afe31a745b47eee7ec4ce02d07b",
-      "errors": [
-        "Offline validation: [Errno 2] No such file or directory: '[local path]'",
-        "ValueError: Unrelated host load contaminated the run"
-      ],
-      "instrumentation": "instrumented",
-      "limitations": [
-        "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
-        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
-        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
-        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
-        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
-        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
-      ],
-      "metrics": {
-        "completed_count": null,
-        "cpu_seconds": null,
-        "elapsed_seconds": null,
-        "latency_ms": {},
-        "sampled_peak_rss_bytes": null,
-        "throughput_per_second": null
-      },
-      "outcome": "failure",
-      "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": null,
-      "recorded_at": "2026-09-12T16:44:45.438619Z",
-      "revision": "c2ef905b4c0408fe73dcc121c00ac1b540c966c7",
-      "run_id": "00000029_20260912T164445.440270Z_dvp-adaptive-v1_rust_instrumented",
-      "scenario": "dvp",
-      "synchronizer": "rust",
-      "throughput_change_percent": null,
-      "validation": "incomplete",
-      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
-      "workload": {
-        "assets": 200,
-        "cut_factor": 0.9,
-        "cycles": 600,
-        "increase_threshold": 0.75,
-        "load_mode": "adaptive",
-        "start_pending": 5.0,
-        "step_factor": 0.03,
-        "target_latency_ms": 1000,
-        "target_latency_tolerance": 0.05,
-        "warmup_cycles": 120
-      }
-    },
-    {
-      "comparison_key": "01af1ea013a3c3723871ea1a5876c7ed82d986abc0217944dcef6a75850e9c62",
-      "errors": [
-        "ValueError: Unrelated host load contaminated the run"
-      ],
-      "instrumentation": "instrumented",
-      "limitations": [
-        "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
-        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
-        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
-        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
-        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
-        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
-      ],
-      "metrics": {
-        "completed_count": 1800,
-        "cpu_seconds": 31.90372675,
-        "elapsed_seconds": 14.039,
-        "latency_ms": {
-          "count": 1861,
-          "max": 1292,
-          "mean": 795.8173025255239,
-          "p50": 821,
-          "p95": 1148,
-          "p99": 1191
-        },
-        "sampled_peak_rss_bytes": 104382464,
-        "throughput_per_second": 128.21426027494834
-      },
-      "outcome": "failure",
-      "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": "00000028_20260912T163747.185822Z_dvp-adaptive-v1_rust_instrumented",
-      "recorded_at": "2026-09-12T16:48:50.285866Z",
-      "revision": "c2ef905b4c0408fe73dcc121c00ac1b540c966c7",
-      "run_id": "00000030_20260912T164850.287477Z_dvp-adaptive-v1_rust_instrumented",
-      "scenario": "dvp",
-      "synchronizer": "rust",
-      "throughput_change_percent": null,
-      "validation": "revalidated",
-      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
-      "workload": {
-        "assets": 200,
-        "cut_factor": 0.9,
-        "cycles": 600,
-        "increase_threshold": 0.75,
-        "load_mode": "adaptive",
-        "start_pending": 5.0,
-        "step_factor": 0.03,
-        "target_latency_ms": 1000,
-        "target_latency_tolerance": 0.05,
-        "warmup_cycles": 120
-      }
-    },
-    {
-      "comparison_key": "546fde59f3a1e0213a3c18cbe56b350b3cd17afe31a745b47eee7ec4ce02d07b",
-      "errors": [
-        "Offline validation: [Errno 2] No such file or directory: '[local path]'",
-        "ValueError: Unrelated host load contaminated the run"
-      ],
-      "instrumentation": "instrumented",
-      "limitations": [
-        "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
-        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
-        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
-        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
-        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
-        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
-      ],
-      "metrics": {
-        "completed_count": null,
-        "cpu_seconds": null,
-        "elapsed_seconds": null,
-        "latency_ms": {},
-        "sampled_peak_rss_bytes": null,
-        "throughput_per_second": null
-      },
-      "outcome": "failure",
-      "preset": "dvp-adaptive-v1",
-      "previous_compatible_run": null,
-      "recorded_at": "2026-09-12T16:53:34.420486Z",
-      "revision": "c2ef905b4c0408fe73dcc121c00ac1b540c966c7",
-      "run_id": "00000031_20260912T165334.422101Z_dvp-adaptive-v1_rust_instrumented",
-      "scenario": "dvp",
-      "synchronizer": "rust",
-      "throughput_change_percent": null,
-      "validation": "incomplete",
       "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
       "workload": {
         "assets": 200,

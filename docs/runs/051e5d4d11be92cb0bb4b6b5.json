@@ -46,6 +46,5 @@
     "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
   ],
   "errors": [],
-  "throughput_change_percent": null,
-  "previous_compatible_run": null
+  "scala_baseline": null
 }

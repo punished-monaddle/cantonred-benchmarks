@@ -40,6 +40,10 @@
     "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
   ],
   "errors": [],
-  "throughput_change_percent": -11.826002665697322,
-  "previous_compatible_run": "00000003_20260912T150811.732746Z_rust_uninstrumented"
+  "scala_baseline": {
+    "run_id": "00000005_20260912T150811.858192Z_scala_uninstrumented",
+    "kind": "paired",
+    "differences": [],
+    "scope": "Scala participants and Scala synchronizer with matching comparison configuration. Single observations; descriptive differences only."
+  }
 }

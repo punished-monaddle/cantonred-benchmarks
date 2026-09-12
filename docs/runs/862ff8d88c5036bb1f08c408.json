@@ -46,6 +46,10 @@
     "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
   ],
   "errors": [],
-  "throughput_change_percent": null,
-  "previous_compatible_run": null
+  "scala_baseline": {
+    "run_id": null,
+    "kind": "unavailable",
+    "differences": [],
+    "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+  }
 }

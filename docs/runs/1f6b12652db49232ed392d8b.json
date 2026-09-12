@@ -46,6 +46,14 @@
     "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
   ],
   "errors": [],
-  "throughput_change_percent": 4.438642297650142,
-  "previous_compatible_run": "00000027_20260912T163540.485075Z_dvp-adaptive-v1_rust_instrumented"
+  "scala_baseline": {
+    "run_id": "00000009_20260912T150947.771713Z_scala_instrumented",
+    "kind": "historical",
+    "differences": [
+      "Host identity is not matched; historical runs may lack a recorded machine identity.",
+      "Harness provenance differs (3 input fingerprints); workload equivalence beyond the recorded settings is not established.",
+      "Preset labels differ or are absent on the historical run; resolved workload settings match."
+    ],
+    "scope": "Historical Scala reference: workload, observer mode, participant version, artifacts, Java and storage settings match. Host/harness differences prevent a controlled speedup claim. Strict trend cohorts remain separate."
+  }
 }
