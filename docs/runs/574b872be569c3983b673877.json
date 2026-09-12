@@ -1,0 +1,53 @@
+{
+  "run_id": "00000030_20260912T164850.287477Z_dvp-adaptive-v1_rust_instrumented",
+  "recorded_at": "2026-09-12T16:48:50.285866Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": "dvp-adaptive-v1",
+  "instrumentation": "instrumented",
+  "outcome": "failure",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "c2ef905b4c0408fe73dcc121c00ac1b540c966c7",
+  "comparison_key": "01af1ea013a3c3723871ea1a5876c7ed82d986abc0217944dcef6a75850e9c62",
+  "metrics": {
+    "completed_count": 1800,
+    "cpu_seconds": 31.90372675,
+    "elapsed_seconds": 14.039,
+    "latency_ms": {
+      "count": 1861,
+      "max": 1292,
+      "mean": 795.8173025255239,
+      "p50": 821,
+      "p95": 1148,
+      "p99": 1191
+    },
+    "sampled_peak_rss_bytes": 104382464,
+    "throughput_per_second": 128.21426027494834
+  },
+  "workload": {
+    "assets": 200,
+    "cut_factor": 0.9,
+    "cycles": 600,
+    "increase_threshold": 0.75,
+    "load_mode": "adaptive",
+    "start_pending": 5.0,
+    "step_factor": 0.03,
+    "target_latency_ms": 1000,
+    "target_latency_tolerance": 0.05,
+    "warmup_cycles": 120
+  },
+  "limitations": [
+    "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [
+    "ValueError: Unrelated host load contaminated the run"
+  ],
+  "throughput_change_percent": null,
+  "previous_compatible_run": "00000028_20260912T163747.185822Z_dvp-adaptive-v1_rust_instrumented"
+}

@@ -1,0 +1,41 @@
+{
+  "run_id": "00000011_20260912T150950.157802Z_scala_uninstrumented",
+  "recorded_at": "2026-09-12T15:09:50.157933Z",
+  "synchronizer": "scala",
+  "scenario": "dvp",
+  "preset": null,
+  "instrumentation": "uninstrumented",
+  "outcome": "failure",
+  "validation": "incomplete",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "2a732780b95b639ee1d4da18344e0bf46295793f",
+  "comparison_key": "0b6bea12e67efabccbba9d170d28d6a16fe744ec1232b897ead067f0022d9cad",
+  "metrics": {
+    "completed_count": null,
+    "cpu_seconds": null,
+    "elapsed_seconds": null,
+    "latency_ms": {},
+    "sampled_peak_rss_bytes": null,
+    "throughput_per_second": null
+  },
+  "workload": {
+    "assets": 20,
+    "cycles": 6,
+    "rate": 1.0,
+    "warmup_cycles": 3
+  },
+  "limitations": [
+    "Fixed-rate batches per trader; batch size3; completed trades counted from ledger.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [
+    "error: ValueError: DvP participant workload failed; see client.log and canton.log",
+    "Offline validation: [Errno 2] No such file or directory: '[local path]'"
+  ],
+  "throughput_change_percent": null,
+  "previous_compatible_run": null
+}

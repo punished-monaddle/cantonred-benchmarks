@@ -1,0 +1,48 @@
+{
+  "run_id": "00000022_20260912T162311.979585Z_dvp-adaptive-v1_rust_instrumented",
+  "recorded_at": "2026-09-12T16:23:11.978590Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": "dvp-adaptive-v1",
+  "instrumentation": "uninstrumented",
+  "outcome": "failure",
+  "validation": "incomplete",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "ab57680246e0821bf6ce111b2b1be866ed5922a6",
+  "comparison_key": "5a0982faa3898dc4f894943e630a064e56b6813e17bbed9264167471a43c4a10",
+  "metrics": {
+    "completed_count": null,
+    "cpu_seconds": null,
+    "elapsed_seconds": null,
+    "latency_ms": {},
+    "sampled_peak_rss_bytes": null,
+    "throughput_per_second": null
+  },
+  "workload": {
+    "assets": 200,
+    "cut_factor": 0.9,
+    "cycles": 600,
+    "increase_threshold": 0.75,
+    "load_mode": "adaptive",
+    "start_pending": 5.0,
+    "step_factor": 0.03,
+    "target_latency_ms": 1000,
+    "target_latency_tolerance": 0.05,
+    "warmup_cycles": 120
+  },
+  "limitations": [
+    "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [
+    "Offline validation: [Errno 2] No such file or directory: '[local path]'",
+    "ValueError: Unrelated host load contaminated the run",
+    "Requested and observed instrumentation differ"
+  ],
+  "throughput_change_percent": null,
+  "previous_compatible_run": null
+}

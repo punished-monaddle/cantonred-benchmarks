@@ -1,0 +1,51 @@
+{
+  "run_id": "00000026_20260912T163334.959660Z_dvp-adaptive-v1_rust_instrumented",
+  "recorded_at": "2026-09-12T16:33:34.958031Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": "dvp-adaptive-v1",
+  "instrumentation": "instrumented",
+  "outcome": "pass",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "3a2269a4303c456995f367470d090c72d9e23447",
+  "comparison_key": "01af1ea013a3c3723871ea1a5876c7ed82d986abc0217944dcef6a75850e9c62",
+  "metrics": {
+    "completed_count": 1800,
+    "cpu_seconds": 31.853081,
+    "elapsed_seconds": 13.783,
+    "latency_ms": {
+      "count": 1854,
+      "max": 1348,
+      "mean": 748.1019417475728,
+      "p50": 688,
+      "p95": 1211,
+      "p99": 1306
+    },
+    "sampled_peak_rss_bytes": 105562112,
+    "throughput_per_second": 130.5956613219183
+  },
+  "workload": {
+    "assets": 200,
+    "cut_factor": 0.9,
+    "cycles": 600,
+    "increase_threshold": 0.75,
+    "load_mode": "adaptive",
+    "start_pending": 5.0,
+    "step_factor": 0.03,
+    "target_latency_ms": 1000,
+    "target_latency_tolerance": 0.05,
+    "warmup_cycles": 120
+  },
+  "limitations": [
+    "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [],
+  "throughput_change_percent": 8.191250090691437,
+  "previous_compatible_run": "00000025_20260912T163129.957045Z_dvp-adaptive-v1_rust_instrumented"
+}

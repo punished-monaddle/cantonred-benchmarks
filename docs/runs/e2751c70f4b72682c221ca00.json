@@ -1,0 +1,53 @@
+{
+  "run_id": "00000010_20260912T150948.864214Z_rust_instrumented",
+  "recorded_at": "2026-09-12T05:02:17.285000Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": null,
+  "instrumentation": "instrumented",
+  "outcome": "failure",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "3d450c528520caeb862a25494a80b85d4d61774f",
+  "comparison_key": "dec81ba10fee8e2cfc58dc5a943e4918a65eb0f183da6136cf47fe15ef85ddc5",
+  "metrics": {
+    "completed_count": 1800,
+    "cpu_seconds": 59.10380725,
+    "elapsed_seconds": 47.371,
+    "latency_ms": {
+      "count": 1940,
+      "max": 1164,
+      "mean": 959.8020618556701,
+      "p50": 988,
+      "p95": 1083,
+      "p99": 1121
+    },
+    "sampled_peak_rss_bytes": 62259200,
+    "throughput_per_second": 37.99793122374449
+  },
+  "workload": {
+    "assets": 200,
+    "cut_factor": 0.9,
+    "cycles": 600,
+    "increase_threshold": 0.75,
+    "load_mode": "adaptive",
+    "start_pending": 5.0,
+    "step_factor": 0.03,
+    "target_latency_ms": 1000,
+    "target_latency_tolerance": 0.05,
+    "warmup_cycles": 120
+  },
+  "limitations": [
+    "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [
+    "error: ValueError: Dangling, forward or cyclic invocation parent reference"
+  ],
+  "throughput_change_percent": null,
+  "previous_compatible_run": null
+}

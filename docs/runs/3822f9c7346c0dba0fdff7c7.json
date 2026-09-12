@@ -1,0 +1,45 @@
+{
+  "run_id": "00000007_20260912T150811.986064Z_scala_uninstrumented",
+  "recorded_at": "2026-09-12T00:51:19.273000Z",
+  "synchronizer": "scala",
+  "scenario": "dvp",
+  "preset": null,
+  "instrumentation": "uninstrumented",
+  "outcome": "pass",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
+  "comparison_key": "4d514dd22c521097f1b01aab554583ba7d1ffd0520b9bdc7db74384d7d8ccd00",
+  "metrics": {
+    "completed_count": 90,
+    "cpu_seconds": 11.423334001,
+    "elapsed_seconds": 34.92,
+    "latency_ms": {
+      "count": 113,
+      "max": 399,
+      "mean": 372.92035398230087,
+      "p50": 379,
+      "p95": 397,
+      "p99": 398
+    },
+    "sampled_peak_rss_bytes": 1152188416,
+    "throughput_per_second": 2.577319587628866
+  },
+  "workload": {
+    "assets": 20,
+    "cycles": 30,
+    "rate": 1.0,
+    "warmup_cycles": 12
+  },
+  "limitations": [
+    "Fixed-rate batches per trader; batch size3; completed trades counted from ledger.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [],
+  "throughput_change_percent": 2.058991981672409,
+  "previous_compatible_run": "00000002_20260912T150811.658149Z_scala_uninstrumented"
+}

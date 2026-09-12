@@ -1,36 +1,55 @@
-<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>00000009_20260912T150947.771713Z_scala_instrumented</title><style>body{font:16px system-ui;max-width:1200px;margin:40px auto;padding:0 24px;color:#182431;background:#f7f9fc}
-table{border-collapse:collapse;width:100%;background:white;margin:20px 0}td,th{padding:10px;border-bottom:1px solid #dde3ed;text-align:left}
-a{color:#175caf}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:16px}svg{background:white;width:100%;max-height:240px}
-small{color:#526174}details{margin:16px 0}.bad{color:#ac2430}</style><h1>00000009_20260912T150947.771713Z_scala_instrumented</h1><p><a href="../index.html">← All runs</a></p><p>Scala participants with Scala or Rust synchronizers. All archived attempts are shown, including failures. Instrumented runs are diagnostic. Compatible workload, host and harness cohorts stay separate; charts are descriptive, not statistical significance claims.</p><p>Published summaries omit raw logs, machine names and local paths. Full evidence remains in the private local archive. DvP latency measures Ledger commands/batches, not individual trades. CPU and RSS cover the synchronizer, excluding participants and PostgreSQL.</p><p><strong>pass</strong> · scala · instrumented</p><h2>Metrics</h2><pre>{
-  &quot;completed_count&quot;: 1800,
-  &quot;cpu_seconds&quot;: 93.644366499,
-  &quot;elapsed_seconds&quot;: 28.653,
-  &quot;latency_ms&quot;: {
-    &quot;count&quot;: 1907,
-    &quot;max&quot;: 1191,
-    &quot;mean&quot;: 931.024646040902,
-    &quot;p50&quot;: 971,
-    &quot;p95&quot;: 1115,
-    &quot;p99&quot;: 1153
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run 009 · Canton Benchmarks</title><meta name="description" content="Measured Canton synchronizer performance with Scala participants. Run results, comparable trends and validation evidence.">
+<link rel="stylesheet" href="../site.css"><script src="../site.js" defer></script></head><body>
+<header class="top"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><i class="brand-mark" aria-hidden="true"></i>Canton <span>/ Benchmarks</span></a><div class="nav-links"><a href="../index.html">Run explorer</a><a href="585e7cbed36d899d27e63831.json" download>Download data ↓</a></div></nav></header>
+<main><div class="breadcrumb"><a href="../index.html">Run explorer</a><span>/</span>Run 009</div><div class="hero"><div><div class="eyebrow">Adaptive DvP / Instrumented</div><h1>Run 009 <span class="muted">/</span> Scala synchronizer</h1><p class="intro">Scala participants · Imported workload · revision <span class="mono">3d450c528520</span></p></div><div class="hero-meta"><span class="pill pass"><span class="dot"></span>Pass</span><time>12 Sep 2026 · 05:00:36 UTC</time></div></div><section class="alert success" aria-label="Result interpretation"><div class="eyebrow">Result</div><div class="alert-title">Measurement accepted</div><p>The archived evidence passed the controller’s checks. This run is included in its compatible comparison series.</p></section><div class="stats"><div class="stat"><div class="stat-label">Throughput</div><div class="stat-value">62.8 <span class="unit">trades/s</span></div><div class="stat-note">Recorded measurement</div></div><div class="stat"><div class="stat-label">Command latency · p95</div><div class="stat-value">1,115 <span class="unit">ms</span></div><div class="stat-note">Recorded measurement</div></div><div class="stat"><div class="stat-label">Synchronizer CPU</div><div class="stat-value">93.6 <span class="unit">CPU-s</span></div><div class="stat-note">Recorded measurement</div></div><div class="stat"><div class="stat-label">Peak memory</div><div class="stat-value">1,244.7 <span class="unit">MiB</span></div><div class="stat-note">Recorded measurement</div></div></div><p class="note">No earlier passing run with the same backend and comparison configuration. This measurement establishes a baseline for its series.</p><div class="grid"><section class="panel"><div class="panel-head"><div><h2>Command latency</h2><p class="muted">Percentiles · lower is better</p></div><span class="pill plain"><span class="dot"></span>Observed</span></div><div aria-label="Latency percentile bars"><div class="latency-row"><span>p50</span><div class="bar-track"><div class="bar" style="width:84.215%"></div></div><span class="bar-value">971 ms</span></div><div class="latency-row"><span>p95</span><div class="bar-track"><div class="bar" style="width:96.704%"></div></div><span class="bar-value">1,115 ms</span></div><div class="latency-row"><span>p99</span><div class="bar-track"><div class="bar" style="width:100.000%"></div></div><span class="bar-value">1,153 ms</span></div></div><div class="receipt"><div><small>Mean</small><strong>931 <small>ms</small></strong></div><div><small>Maximum</small><strong>1,191 <small>ms</small></strong></div></div><p class="plot-caption">1,907 latency samples. Percentiles describe Ledger command/batch latency.</p></section><section class="panel"><h2>Evidence receipt</h2><p class="muted">What this archive can establish.</p><ul class="status-list"><li><span class="check" aria-hidden="true">✓</span><div><strong>Measurement captured</strong><p>At least one performance metric is available.</p></div></li><li><span class="check" aria-hidden="true">✓</span><div><strong>Archive validation</strong><p>Evidence revalidated.</p></div></li><li><span class="check" aria-hidden="true">✓</span><div><strong>Eligible for comparison</strong><p>Included only with compatible passing runs.</p></div></li></ul></section></div><div class="grid equal"><section class="panel"><h2>Workload &amp; resources</h2><p class="muted">Measured window only; setup and warmup are excluded.</p><dl class="kv"><div><dt>Completed trades</dt><dd>1,800</dd></div><div><dt>Elapsed wall time</dt><dd>28.7 s</dd></div><div><dt>Synchronizer CPU time</dt><dd>93.6 CPU-s</dd></div><div><dt>Sampled peak RSS</dt><dd>1,244.7 MiB</dd></div><div><dt>Average CPU cores used</dt><dd>3.27</dd></div></dl><p class="plot-caption">CPU and memory cover the synchronizer process. Participant and PostgreSQL usage are outside this measurement.</p></section><section class="panel"><h2>Run configuration</h2><dl class="kv"><div><dt>Assets</dt><dd>200</dd></div><div><dt>Cut factor</dt><dd>0.9</dd></div><div><dt>Measured cycles / trader</dt><dd>600</dd></div><div><dt>Increase threshold</dt><dd>0.75</dd></div><div><dt>Load controller</dt><dd>adaptive</dd></div><div><dt>Initial pending</dt><dd>5.0</dd></div><div><dt>Step factor</dt><dd>0.03</dd></div><div><dt>Target latency (ms)</dt><dd>1000</dd></div><div><dt>Latency tolerance</dt><dd>0.05</dd></div><div><dt>Warmup cycles / trader</dt><dd>120</dd></div></dl></section></div><section class="panel section"><h2>How to read this result</h2><ul class="bullets"><li>Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.</li><li>Separate warmup ceremony; measured setup excluded using upstream mode transitions.</li><li>CPU counters bracket logged boundaries with at most250ms extra at each edge.</li><li>Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.</li><li>Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.</li><li>Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions.</li></ul><p class="note">Validation scope: Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.</p><details class="tech"><summary>Technical provenance &amp; machine-readable record</summary><dl class="kv"><div><dt>Run identity</dt><dd>00000009_20260912T150947.771713Z_scala_instrumented</dd></div><div><dt>Revision</dt><dd>3d450c528520caeb862a25494a80b85d4d61774f</dd></div><div><dt>Comparison group</dt><dd>b84319ecfe0b70033f254e19b9372c31c6116640c8019aca5fefa2e3fd328e2e</dd></div></dl><pre>{
+  &quot;run_id&quot;: &quot;00000009_20260912T150947.771713Z_scala_instrumented&quot;,
+  &quot;recorded_at&quot;: &quot;2026-09-12T05:00:36.016000Z&quot;,
+  &quot;synchronizer&quot;: &quot;scala&quot;,
+  &quot;scenario&quot;: &quot;dvp&quot;,
+  &quot;preset&quot;: null,
+  &quot;instrumentation&quot;: &quot;instrumented&quot;,
+  &quot;outcome&quot;: &quot;pass&quot;,
+  &quot;validation&quot;: &quot;revalidated&quot;,
+  &quot;validation_scope&quot;: &quot;Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.&quot;,
+  &quot;revision&quot;: &quot;3d450c528520caeb862a25494a80b85d4d61774f&quot;,
+  &quot;comparison_key&quot;: &quot;b84319ecfe0b70033f254e19b9372c31c6116640c8019aca5fefa2e3fd328e2e&quot;,
+  &quot;metrics&quot;: {
+    &quot;completed_count&quot;: 1800,
+    &quot;cpu_seconds&quot;: 93.644366499,
+    &quot;elapsed_seconds&quot;: 28.653,
+    &quot;latency_ms&quot;: {
+      &quot;count&quot;: 1907,
+      &quot;max&quot;: 1191,
+      &quot;mean&quot;: 931.024646040902,
+      &quot;p50&quot;: 971,
+      &quot;p95&quot;: 1115,
+      &quot;p99&quot;: 1153
+    },
+    &quot;sampled_peak_rss_bytes&quot;: 1305149440,
+    &quot;throughput_per_second&quot;: 62.82064705266464
   },
-  &quot;sampled_peak_rss_bytes&quot;: 1305149440,
-  &quot;throughput_per_second&quot;: 62.82064705266464
-}</pre><h2>Workload</h2><pre>{
-  &quot;assets&quot;: 200,
-  &quot;cut_factor&quot;: 0.9,
-  &quot;cycles&quot;: 600,
-  &quot;increase_threshold&quot;: 0.75,
-  &quot;load_mode&quot;: &quot;adaptive&quot;,
-  &quot;start_pending&quot;: 5.0,
-  &quot;step_factor&quot;: 0.03,
-  &quot;target_latency_ms&quot;: 1000,
-  &quot;target_latency_tolerance&quot;: 0.05,
-  &quot;warmup_cycles&quot;: 120
-}</pre><h2>Errors</h2><pre>[]</pre><h2>Limitations</h2><pre>[
-  &quot;Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.&quot;,
-  &quot;Separate warmup ceremony; measured setup excluded using upstream mode transitions.&quot;,
-  &quot;CPU counters bracket logged boundaries with at most250ms extra at each edge.&quot;,
-  &quot;Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.&quot;,
-  &quot;Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.&quot;,
-  &quot;Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions.&quot;
-]</pre><h2>Validation Scope</h2><pre>&quot;Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.&quot;</pre><h2>Revision</h2><pre>&quot;3d450c528520caeb862a25494a80b85d4d61774f&quot;</pre><h2>Comparison Key</h2><pre>&quot;b84319ecfe0b70033f254e19b9372c31c6116640c8019aca5fefa2e3fd328e2e&quot;</pre></html>
+  &quot;workload&quot;: {
+    &quot;assets&quot;: 200,
+    &quot;cut_factor&quot;: 0.9,
+    &quot;cycles&quot;: 600,
+    &quot;increase_threshold&quot;: 0.75,
+    &quot;load_mode&quot;: &quot;adaptive&quot;,
+    &quot;start_pending&quot;: 5.0,
+    &quot;step_factor&quot;: 0.03,
+    &quot;target_latency_ms&quot;: 1000,
+    &quot;target_latency_tolerance&quot;: 0.05,
+    &quot;warmup_cycles&quot;: 120
+  },
+  &quot;limitations&quot;: [
+    &quot;Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.&quot;,
+    &quot;Separate warmup ceremony; measured setup excluded using upstream mode transitions.&quot;,
+    &quot;CPU counters bracket logged boundaries with at most250ms extra at each edge.&quot;,
+    &quot;Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.&quot;,
+    &quot;Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.&quot;,
+    &quot;Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions.&quot;
+  ],
+  &quot;errors&quot;: [],
+  &quot;throughput_change_percent&quot;: null,
+  &quot;previous_compatible_run&quot;: null
+}</pre></details></section><nav class="bottom-nav" aria-label="Adjacent runs"><a class="link" href="f348f03c42b9a67d1c5e85bd.html">← Previous: Run 008 ↗</a><a class="link" href="e2751c70f4b72682c221ca00.html">Next: Run 010 ↗</a></nav><footer class="footer"><p>Canton benchmark archive · Scala participants, Rust &amp; Scala synchronizers.<br>Generated from retained measurements. Raw logs and private machine details stay in the local archive.</p><p>UTC timestamps · CPU-s = aggregate CPU time<br>MiB = 1,048,576 bytes</p></footer></main></body></html>

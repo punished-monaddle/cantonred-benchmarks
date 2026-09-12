@@ -1,0 +1,45 @@
+{
+  "run_id": "00000006_20260912T150811.917016Z_rust_uninstrumented",
+  "recorded_at": "2026-09-12T00:50:24.636000Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": null,
+  "instrumentation": "uninstrumented",
+  "outcome": "pass",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "b9ccc41d12485edbba159b19c365fc476abfbbcc",
+  "comparison_key": "9fdd0b74959850f0ca874e527a193be2d32d6c6df04e09f0ff7420cf06ec35b2",
+  "metrics": {
+    "completed_count": 90,
+    "cpu_seconds": 1.753963375,
+    "elapsed_seconds": 8.253,
+    "latency_ms": {
+      "count": 111,
+      "max": 410,
+      "mean": 315.72972972972974,
+      "p50": 308,
+      "p95": 392,
+      "p99": 405
+    },
+    "sampled_peak_rss_bytes": 45301760,
+    "throughput_per_second": 10.905125408942203
+  },
+  "workload": {
+    "assets": 20,
+    "cycles": 30,
+    "rate": 4.0,
+    "warmup_cycles": 12
+  },
+  "limitations": [
+    "Fixed-rate batches per trader; batch size3; completed trades counted from ledger.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [],
+  "throughput_change_percent": -11.826002665697322,
+  "previous_compatible_run": "00000003_20260912T150811.732746Z_rust_uninstrumented"
+}

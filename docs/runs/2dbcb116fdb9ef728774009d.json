@@ -1,0 +1,51 @@
+{
+  "run_id": "00000021_20260912T161543.952037Z_rust_uninstrumented",
+  "recorded_at": "2026-09-12T15:52:52.232000Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": null,
+  "instrumentation": "uninstrumented",
+  "outcome": "pass",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "d4cac1dab79ba1f1ff395ec790d040e800d99bce",
+  "comparison_key": "a29e480b5a7c7e3535ac7e0a138aa19eb08ff0d1d81cf177d603ef1fc9f059c1",
+  "metrics": {
+    "completed_count": 501,
+    "cpu_seconds": 6.038536542,
+    "elapsed_seconds": 5.243,
+    "latency_ms": {
+      "count": 546,
+      "max": 848,
+      "mean": 485.2637362637363,
+      "p50": 460,
+      "p95": 744,
+      "p99": 795
+    },
+    "sampled_peak_rss_bytes": 68911104,
+    "throughput_per_second": 95.55597940110624
+  },
+  "workload": {
+    "assets": 200,
+    "cut_factor": 0.9,
+    "cycles": 167,
+    "increase_threshold": 0.75,
+    "load_mode": "adaptive",
+    "start_pending": 5.0,
+    "step_factor": 0.03,
+    "target_latency_ms": 1000,
+    "target_latency_tolerance": 0.05,
+    "warmup_cycles": 120
+  },
+  "limitations": [
+    "Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [],
+  "throughput_change_percent": null,
+  "previous_compatible_run": null
+}
