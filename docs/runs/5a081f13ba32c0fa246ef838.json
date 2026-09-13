@@ -1,0 +1,113 @@
+{
+  "run_id": "00000093_20260913T201726.988301Z_dvp-low-volume-v1_rust_instrumented",
+  "recorded_at": "2026-09-13T20:17:26.987420Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": "dvp-low-volume-v1",
+  "instrumentation": "instrumented",
+  "outcome": "pass",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+  "comparison_key": "4a3c7f10084665cc8408b4306852fe6e6a155497e91c797421ea94f7ac8eeb48",
+  "metrics": {
+    "completed_count": 180,
+    "cpu_seconds": 9.850466625,
+    "elapsed_seconds": 132.2,
+    "latency_ms": {
+      "count": 232,
+      "max": 95,
+      "mean": 56.827586206896555,
+      "p50": 56,
+      "p95": 81,
+      "p99": 89
+    },
+    "sampled_peak_rss_bytes": 55279616,
+    "throughput_per_second": 1.361573373676248
+  },
+  "workload": {
+    "assets": 20,
+    "cycles": 60,
+    "rate": 0.5,
+    "warmup_cycles": 12
+  },
+  "limitations": [
+    "Fixed-rate batches per trader; batch size3; completed trades counted from ledger.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [],
+  "scala_baseline": {
+    "run_id": null,
+    "kind": "unavailable",
+    "differences": [],
+    "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+  },
+  "test_source": {
+    "schema_version": 1,
+    "collection": "run-start",
+    "files": [
+      {
+        "role": "Test scenario",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+        "path": "tests/performance/dvp-scenario.canton",
+        "sha256": "b27425f394978047c02f553ca24ed45dcd11f25e148a03bf8ccab1bfbb8ef0e8",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/d9314441c10bbb3b38137e729d1ebf4647f9f33d/tests/performance/dvp-scenario.canton"
+      },
+      {
+        "role": "Test harness",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+        "path": "tests/performance/dvp_run.py",
+        "sha256": "bbc1168c3deaf3f38dde72fdd9e0630dd187b8526db2dcae6fc70a63d41e22a5",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/d9314441c10bbb3b38137e729d1ebf4647f9f33d/tests/performance/dvp_run.py"
+      },
+      {
+        "role": "Scenario generator",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+        "path": "tests/performance/dvp_workload.py",
+        "sha256": "6b8d31fcfba402638a775b98327dd27a5646e1cfb8a71cbd0d8cddb1f4cf05bd",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/d9314441c10bbb3b38137e729d1ebf4647f9f33d/tests/performance/dvp_workload.py"
+      },
+      {
+        "role": "Scala workload driver",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala",
+        "sha256": "ea2a81a58a99a0888ae91c6b78607b0e8e103d283a24063b29f97b1bafb892d7",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala"
+      },
+      {
+        "role": "Scala performance runner",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala",
+        "sha256": "d79e2507aefe11392126cc736ea69e11f085bc35bf5ea6de41edf8715f8944bd",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala"
+      },
+      {
+        "role": "Daml trade model",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/daml/main/Dvp/Trade.daml",
+        "sha256": "1ea32b58390949600e10cadb090f6e10a70068e6f8f3b5af5ec8c31f9c81b49a",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/daml/main/Dvp/Trade.daml"
+      }
+    ],
+    "rendered_script": {
+      "filename": "workload.canton",
+      "sha256": "c3fc7f6a112233ff4d87835b8e550ef4feae2ffb26a10ba2e095bba873409984"
+    }
+  }
+}
