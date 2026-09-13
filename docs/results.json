@@ -23,7 +23,7 @@
           "scala": "00000034_20260913T094713.579297Z_dvp-calibration-v1_scala_plain"
         }
       ],
-      "scope": "Identical-configuration whole paired rounds; descriptive only. Instrumented comparisons remain diagnostic.",
+      "scope": "Matching shared configuration and fixed Rust orderer settings per paired group; descriptive only. Instrumented comparisons remain diagnostic.",
       "state": "incomplete"
     },
     {
@@ -60,7 +60,7 @@
           "scala": "00000040_20260913T100152.295032Z_dvp-calibration-v1_scala_plain"
         }
       ],
-      "scope": "Identical-configuration whole paired rounds; descriptive only. Instrumented comparisons remain diagnostic.",
+      "scope": "Matching shared configuration and fixed Rust orderer settings per paired group; descriptive only. Instrumented comparisons remain diagnostic.",
       "state": "complete"
     },
     {
@@ -97,7 +97,7 @@
           "scala": "00000047_20260913T102039.362734Z_dvp-calibration-v1_scala_plain"
         }
       ],
-      "scope": "Identical-configuration whole paired rounds; descriptive only. Instrumented comparisons remain diagnostic.",
+      "scope": "Matching shared configuration and fixed Rust orderer settings per paired group; descriptive only. Instrumented comparisons remain diagnostic.",
       "state": "complete"
     },
     {
@@ -134,7 +134,7 @@
           "scala": "00000056_20260913T111213.599850Z_dvp-calibration-pg-v1_scala_plain"
         }
       ],
-      "scope": "Identical-configuration whole paired rounds; descriptive only. Instrumented comparisons remain diagnostic.",
+      "scope": "Matching shared configuration and fixed Rust orderer settings per paired group; descriptive only. Instrumented comparisons remain diagnostic.",
       "state": "complete"
     },
     {
@@ -171,7 +171,7 @@
           "scala": "00000063_20260913T115709.956195Z_dvp-calibration-pg-v2_scala_plain"
         }
       ],
-      "scope": "Identical-configuration whole paired rounds; descriptive only. Instrumented comparisons remain diagnostic.",
+      "scope": "Matching shared configuration and fixed Rust orderer settings per paired group; descriptive only. Instrumented comparisons remain diagnostic.",
       "state": "complete"
     },
     {
@@ -210,7 +210,7 @@
           "scala": "00000007_20260912T150811.986064Z_scala_uninstrumented"
         }
       ],
-      "scope": "Identical-configuration whole paired rounds; descriptive only. Instrumented comparisons remain diagnostic.",
+      "scope": "Matching shared configuration and fixed Rust orderer settings per paired group; descriptive only. Instrumented comparisons remain diagnostic.",
       "state": "complete"
     },
     {
@@ -249,7 +249,7 @@
           "scala": "00000005_20260912T150811.858192Z_scala_uninstrumented"
         }
       ],
-      "scope": "Identical-configuration whole paired rounds; descriptive only. Instrumented comparisons remain diagnostic.",
+      "scope": "Matching shared configuration and fixed Rust orderer settings per paired group; descriptive only. Instrumented comparisons remain diagnostic.",
       "state": "complete"
     }
   ],
