@@ -1,0 +1,122 @@
+{
+  "run_id": "00000085_20260913T174243.880234Z_dvp-pending32-long-report120-v1_rust_plain",
+  "recorded_at": "2026-09-13T17:42:43.878582Z",
+  "synchronizer": "rust",
+  "scenario": "dvp",
+  "preset": "dvp-pending32-long-report120-v1",
+  "instrumentation": "uninstrumented",
+  "outcome": "pass",
+  "validation": "revalidated",
+  "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+  "revision": "e9f593e0269169e1054e00a5de31f5b7b7afac5a",
+  "comparison_key": "f5151ebd7ac36d18f433636146de0fa745fba971dda0a386afd00ba5b2ac3865",
+  "metrics": {
+    "completed_count": 36000,
+    "cpu_seconds": 286.577345001,
+    "elapsed_seconds": 193.049,
+    "latency_ms": {
+      "count": 25438,
+      "max": 4093,
+      "mean": 688.4908797861467,
+      "p50": 495,
+      "p95": 1943,
+      "p99": 2723
+    },
+    "sampled_peak_rss_bytes": 322076672,
+    "throughput_per_second": 186.48115245352216
+  },
+  "workload": {
+    "assets": 200,
+    "cut_factor": 1.0,
+    "cycles": 12000,
+    "increase_threshold": 0.75,
+    "load_mode": "fixed-pending",
+    "participant_heap_gib": 12,
+    "report_frequency": 120,
+    "start_pending": 32.0,
+    "step_factor": 0.0,
+    "target_latency_ms": 1000,
+    "target_latency_tolerance": 0.05,
+    "warmup_cycles": 1000
+  },
+  "limitations": [
+    "Fixed pending target per trader using upstream TargetLatencyNew with stepFactor=0 and cutFactor=1; actual concurrency varies with inventory and reporting.",
+    "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+    "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+    "Host-load guard disabled at user request; concurrent builds/CPU load may affect these measurements.",
+    "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+    "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+    "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+  ],
+  "errors": [],
+  "scala_baseline": {
+    "run_id": null,
+    "kind": "unavailable",
+    "differences": [],
+    "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+  },
+  "test_source": {
+    "schema_version": 1,
+    "collection": "run-start",
+    "files": [
+      {
+        "role": "Test scenario",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "e9f593e0269169e1054e00a5de31f5b7b7afac5a",
+        "path": "tests/performance/dvp-scenario.canton",
+        "sha256": "526f826dedd78b7492cfa2d296b046431a35c43e66e32b9a0c52ecf18dc442f6",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/e9f593e0269169e1054e00a5de31f5b7b7afac5a/tests/performance/dvp-scenario.canton"
+      },
+      {
+        "role": "Test harness",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "e9f593e0269169e1054e00a5de31f5b7b7afac5a",
+        "path": "tests/performance/dvp_run.py",
+        "sha256": "48d4fd1625bf3b1b0d783192ebadbaea03dc73e89b4985709c035a2038559c10",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/e9f593e0269169e1054e00a5de31f5b7b7afac5a/tests/performance/dvp_run.py"
+      },
+      {
+        "role": "Scenario generator",
+        "repository": "https://github.com/punished-monaddle/cantonred",
+        "commit": "e9f593e0269169e1054e00a5de31f5b7b7afac5a",
+        "path": "tests/performance/dvp_workload.py",
+        "sha256": "dbe13db3c3ca81142bf2e5af92a18e22c490ac6a3d1c1a0dd3fe85056367f34d",
+        "revision_match": "matched",
+        "url": "https://github.com/punished-monaddle/cantonred/blob/e9f593e0269169e1054e00a5de31f5b7b7afac5a/tests/performance/dvp_workload.py"
+      },
+      {
+        "role": "Scala workload driver",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala",
+        "sha256": "ea2a81a58a99a0888ae91c6b78607b0e8e103d283a24063b29f97b1bafb892d7",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala"
+      },
+      {
+        "role": "Scala performance runner",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala",
+        "sha256": "d79e2507aefe11392126cc736ea69e11f085bc35bf5ea6de41edf8715f8944bd",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala"
+      },
+      {
+        "role": "Daml trade model",
+        "repository": "https://github.com/digital-asset/canton",
+        "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+        "path": "community/performance-driver/src/main/daml/main/Dvp/Trade.daml",
+        "sha256": "1ea32b58390949600e10cadb090f6e10a70068e6f8f3b5af5ec8c31f9c81b49a",
+        "revision_match": "matched",
+        "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/daml/main/Dvp/Trade.daml"
+      }
+    ],
+    "rendered_script": {
+      "filename": "workload.canton",
+      "sha256": "44ad5ffae3656f84ae06eaea9b7ebe3b312c5e0cf02868f0b572c79dcc32d9fa"
+    }
+  }
+}
