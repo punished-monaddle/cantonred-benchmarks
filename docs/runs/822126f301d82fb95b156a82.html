@@ -1,0 +1,126 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run 054 · Canton Benchmarks</title><meta name="description" content="Measured Canton synchronizer performance with Scala participants. Run results, comparable trends and validation evidence.">
+<link rel="stylesheet" href="../site.css"><script src="../site.js" defer></script></head><body>
+<header class="top"><nav class="nav" aria-label="Main navigation"><a class="brand" href="../index.html"><i class="brand-mark" aria-hidden="true"></i>Canton <span>/ Benchmarks</span></a><div class="nav-links"><a href="../index.html">Run explorer</a><a href="822126f301d82fb95b156a82.json" download>Download data ↓</a></div></nav></header>
+<main><div class="breadcrumb"><a href="../index.html">Run explorer</a><span>/</span>Run 054</div><div class="hero"><div><div class="eyebrow">Adaptive DvP / Uninstrumented</div><h1>Run 054 <span class="muted">/</span> Rust synchronizer</h1><p class="intro">Scala participants · dvp-calibration-pg-v1 · revision <span class="mono">77c12ec4a532</span></p></div><div class="hero-meta"><span class="pill pass"><span class="dot"></span>Pass</span><time>13 Sep 2026 · 11:08:40 UTC</time></div></div><p style="margin:-12px 0 24px"><a class="link" href="https://github.com/punished-monaddle/cantonred/blob/77c12ec4a53235144a75a93ce821ca2db67fc816/tests/performance/dvp-scenario.canton" target="_blank" rel="noopener noreferrer">View test on GitHub ↗</a></p><section class="alert success" aria-label="Result interpretation"><div class="eyebrow">Result</div><div class="alert-title">Measurement accepted</div><p>The archived evidence passed the controller’s checks. This run is included in its compatible comparison series.</p></section><div class="stats"><div class="stat"><div class="stat-label">Throughput</div><div class="stat-value">135 <span class="unit">trades/s</span></div><div class="stat-note"><span class="delta ">+2.0%</span> vs Scala baseline<div>Scala: 132.3 trades/s</div></div></div><div class="stat"><div class="stat-label">Command latency · p95</div><div class="stat-value">1,277 <span class="unit">ms</span></div><div class="stat-note"><span class="delta ">-1.3%</span> vs Scala baseline<div>Scala: 1,294 ms</div></div></div><div class="stat"><div class="stat-label">Synchronizer CPU</div><div class="stat-value">56.5 <span class="unit">CPU-s</span></div><div class="stat-note"><span class="delta ">-30.8%</span> vs Scala baseline<div>Scala: 81.7 CPU-s</div></div></div><div class="stat"><div class="stat-label">Peak memory</div><div class="stat-value">135.4 <span class="unit">MiB</span></div><div class="stat-note"><span class="delta ">-89.7%</span> vs Scala baseline<div>Scala: 1,315.1 MiB</div></div></div></div><section class="panel baseline-panel"><div class="panel-head"><div><div class="eyebrow">Scala participants + Scala synchronizer</div><h2>Scala baseline</h2></div><span class="pill scala"><span class="dot"></span>Paired Control</span></div><p><a class="link" href="2eefcf5659fb5e92770c2e34.html">Scala baseline · Run 053 ↗</a> · 13 Sep 2026 · 11:06:42 UTC · Uninstrumented</p><p class="muted">Scala participants and Scala synchronizer with matching comparison configuration. Single observations; descriptive differences only.</p></section><div class="grid"><section class="panel"><div class="panel-head"><div><h2>Command latency</h2><p class="muted">Percentiles · lower is better</p></div><span class="pill plain"><span class="dot"></span>Observed</span></div><div class="legend"><span><i></i>Rust</span><span class="scala"><i></i>Scala baseline</span></div><div aria-label="Latency percentile bars"><div class="latency-row"><span>p50</span><div><div class="bar-track"><div class="bar" style="width:52.092%"></div></div><div class="bar-track" style="margin-top:6px"><div class="bar" style="width:38.075%;background:var(--scala)"></div></div></div><span class="bar-value">747 ms<br><span style="color:var(--scala)">546 ms</span></span></div><div class="latency-row"><span>p95</span><div><div class="bar-track"><div class="bar" style="width:89.052%"></div></div><div class="bar-track" style="margin-top:6px"><div class="bar" style="width:90.237%;background:var(--scala)"></div></div></div><span class="bar-value">1,277 ms<br><span style="color:var(--scala)">1,294 ms</span></span></div><div class="latency-row"><span>p99</span><div><div class="bar-track"><div class="bar" style="width:99.303%"></div></div><div class="bar-track" style="margin-top:6px"><div class="bar" style="width:100.000%;background:var(--scala)"></div></div></div><span class="bar-value">1,424 ms<br><span style="color:var(--scala)">1,434 ms</span></span></div></div><div class="receipt"><div><small>Mean</small><strong>773.3 <small>ms</small></strong></div><div><small>Maximum</small><strong>1,499 <small>ms</small></strong></div></div><p class="plot-caption">5,553 latency samples. Percentiles describe Ledger command/batch latency.</p></section><section class="panel"><h2>Evidence receipt</h2><p class="muted">What this archive can establish.</p><ul class="status-list"><li><span class="check" aria-hidden="true">✓</span><div><strong>Measurement captured</strong><p>At least one performance metric is available.</p></div></li><li><span class="check" aria-hidden="true">✓</span><div><strong>Archive validation</strong><p>Evidence revalidated.</p></div></li><li><span class="check" aria-hidden="true">✓</span><div><strong>Eligible for comparison</strong><p>Included only with compatible passing runs.</p></div></li></ul></section></div><div class="grid equal"><section class="panel"><h2>Workload &amp; resources</h2><p class="muted">Measured window only; setup and warmup are excluded.</p><dl class="kv"><div><dt>Completed trades</dt><dd>5,400</dd></div><div><dt>Elapsed wall time</dt><dd>40 s</dd></div><div><dt>Synchronizer CPU time</dt><dd>56.5 CPU-s</dd></div><div><dt>Sampled peak RSS</dt><dd>135.4 MiB</dd></div><div><dt>Average CPU cores used</dt><dd>1.41</dd></div></dl><p class="plot-caption">CPU and memory cover the synchronizer process. Participant and PostgreSQL usage are outside this measurement.</p></section><section class="panel"><h2>Run configuration</h2><dl class="kv"><div><dt>Assets</dt><dd>200</dd></div><div><dt>Cut factor</dt><dd>0.9</dd></div><div><dt>Measured cycles / trader</dt><dd>1800</dd></div><div><dt>Increase threshold</dt><dd>0.75</dd></div><div><dt>Load controller</dt><dd>adaptive</dd></div><div><dt>Participant Heap Gib</dt><dd>8</dd></div><div><dt>Participant Storage</dt><dd>postgres</dd></div><div><dt>Initial pending</dt><dd>5.0</dd></div><div><dt>Step factor</dt><dd>0.03</dd></div><div><dt>Target latency (ms)</dt><dd>1000</dd></div><div><dt>Latency tolerance</dt><dd>0.05</dd></div><div><dt>Warmup cycles / trader</dt><dd>600</dd></div></dl></section></div><section class="panel section"><h2>Test source</h2><p class="muted">Source identity collected at run start. GitHub links are pinned to commits whose file contents match the recorded SHA-256.</p><ul class="bullets"><li><a class="link" href="https://github.com/punished-monaddle/cantonred/blob/77c12ec4a53235144a75a93ce821ca2db67fc816/tests/performance/dvp-scenario.canton" target="_blank" rel="noopener noreferrer">Test scenario on GitHub ↗</a><br><small class="mono">tests/performance/dvp-scenario.canton · 77c12ec4a532</small></li><li><a class="link" href="https://github.com/punished-monaddle/cantonred/blob/77c12ec4a53235144a75a93ce821ca2db67fc816/tests/performance/dvp_run.py" target="_blank" rel="noopener noreferrer">Test harness on GitHub ↗</a><br><small class="mono">tests/performance/dvp_run.py · 77c12ec4a532</small></li><li><a class="link" href="https://github.com/punished-monaddle/cantonred/blob/77c12ec4a53235144a75a93ce821ca2db67fc816/tests/performance/dvp_workload.py" target="_blank" rel="noopener noreferrer">Scenario generator on GitHub ↗</a><br><small class="mono">tests/performance/dvp_workload.py · 77c12ec4a532</small></li><li><a class="link" href="https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala" target="_blank" rel="noopener noreferrer">Scala workload driver on GitHub ↗</a><br><small class="mono">community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala · df0ed749ffba</small></li><li><a class="link" href="https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala" target="_blank" rel="noopener noreferrer">Scala performance runner on GitHub ↗</a><br><small class="mono">community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala · df0ed749ffba</small></li><li><a class="link" href="https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/daml/main/Dvp/Trade.daml" target="_blank" rel="noopener noreferrer">Daml trade model on GitHub ↗</a><br><small class="mono">community/performance-driver/src/main/daml/main/Dvp/Trade.daml · df0ed749ffba</small></li></ul><details class="tech"><summary>Rendered workload fingerprint</summary><p>The parameterized script is retained in the local run evidence.</p><pre>workload.canton
+SHA-256: 8713a6b9a5f3f4bfe1e4b0a4990cea60b88657c5793c049b545b83be260430a2</pre></details></section><section class="panel section"><h2>How to read this result</h2><ul class="bullets"><li>Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.</li><li>Separate warmup ceremony; measured setup excluded using upstream mode transitions.</li><li>CPU counters bracket logged boundaries with at most250ms extra at each edge.</li><li>Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.</li><li>Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.</li><li>Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions.</li></ul><p class="note">Validation scope: Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.</p><details class="tech"><summary>Technical provenance &amp; machine-readable record</summary><dl class="kv"><div><dt>Run identity</dt><dd>00000054_20260913T110840.344623Z_dvp-calibration-pg-v1_rust_plain</dd></div><div><dt>Revision</dt><dd>77c12ec4a53235144a75a93ce821ca2db67fc816</dd></div><div><dt>Comparison group</dt><dd>64a4cf13ea0bdf0728f37b7eb1962aef15a9bff0397cb47f66765e74f58d6f35</dd></div></dl><pre>{
+  &quot;run_id&quot;: &quot;00000054_20260913T110840.344623Z_dvp-calibration-pg-v1_rust_plain&quot;,
+  &quot;recorded_at&quot;: &quot;2026-09-13T11:08:40.343476Z&quot;,
+  &quot;synchronizer&quot;: &quot;rust&quot;,
+  &quot;scenario&quot;: &quot;dvp&quot;,
+  &quot;preset&quot;: &quot;dvp-calibration-pg-v1&quot;,
+  &quot;instrumentation&quot;: &quot;uninstrumented&quot;,
+  &quot;outcome&quot;: &quot;pass&quot;,
+  &quot;validation&quot;: &quot;revalidated&quot;,
+  &quot;validation_scope&quot;: &quot;Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.&quot;,
+  &quot;revision&quot;: &quot;77c12ec4a53235144a75a93ce821ca2db67fc816&quot;,
+  &quot;comparison_key&quot;: &quot;64a4cf13ea0bdf0728f37b7eb1962aef15a9bff0397cb47f66765e74f58d6f35&quot;,
+  &quot;metrics&quot;: {
+    &quot;completed_count&quot;: 5400,
+    &quot;cpu_seconds&quot;: 56.548527041,
+    &quot;elapsed_seconds&quot;: 39.986,
+    &quot;latency_ms&quot;: {
+      &quot;count&quot;: 5553,
+      &quot;max&quot;: 1499,
+      &quot;mean&quot;: 773.2820097244733,
+      &quot;p50&quot;: 747,
+      &quot;p95&quot;: 1277,
+      &quot;p99&quot;: 1424
+    },
+    &quot;sampled_peak_rss_bytes&quot;: 142016512,
+    &quot;throughput_per_second&quot;: 135.04726654329016
+  },
+  &quot;workload&quot;: {
+    &quot;assets&quot;: 200,
+    &quot;cut_factor&quot;: 0.9,
+    &quot;cycles&quot;: 1800,
+    &quot;increase_threshold&quot;: 0.75,
+    &quot;load_mode&quot;: &quot;adaptive&quot;,
+    &quot;participant_heap_gib&quot;: 8,
+    &quot;participant_storage&quot;: &quot;postgres&quot;,
+    &quot;start_pending&quot;: 5.0,
+    &quot;step_factor&quot;: 0.03,
+    &quot;target_latency_ms&quot;: 1000,
+    &quot;target_latency_tolerance&quot;: 0.05,
+    &quot;warmup_cycles&quot;: 600
+  },
+  &quot;limitations&quot;: [
+    &quot;Upstream TargetLatencyNew adaptive pending controller; batch size3; not a fixed offered rate.&quot;,
+    &quot;Separate warmup ceremony; measured setup excluded using upstream mode transitions.&quot;,
+    &quot;CPU counters bracket logged boundaries with at most250ms extra at each edge.&quot;,
+    &quot;Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.&quot;,
+    &quot;Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.&quot;,
+    &quot;Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions.&quot;
+  ],
+  &quot;errors&quot;: [],
+  &quot;scala_baseline&quot;: {
+    &quot;run_id&quot;: &quot;00000053_20260913T110642.531753Z_dvp-calibration-pg-v1_scala_plain&quot;,
+    &quot;kind&quot;: &quot;paired&quot;,
+    &quot;differences&quot;: [],
+    &quot;scope&quot;: &quot;Scala participants and Scala synchronizer with matching comparison configuration. Single observations; descriptive differences only.&quot;
+  },
+  &quot;test_source&quot;: {
+    &quot;schema_version&quot;: 1,
+    &quot;collection&quot;: &quot;run-start&quot;,
+    &quot;files&quot;: [
+      {
+        &quot;role&quot;: &quot;Test scenario&quot;,
+        &quot;repository&quot;: &quot;https://github.com/punished-monaddle/cantonred&quot;,
+        &quot;commit&quot;: &quot;77c12ec4a53235144a75a93ce821ca2db67fc816&quot;,
+        &quot;path&quot;: &quot;tests/performance/dvp-scenario.canton&quot;,
+        &quot;sha256&quot;: &quot;465def2bffee74c71e6563f6b5e07aaed43675e6d7c14ebf5980434a62b03b46&quot;,
+        &quot;revision_match&quot;: &quot;matched&quot;,
+        &quot;url&quot;: &quot;https://github.com/punished-monaddle/cantonred/blob/77c12ec4a53235144a75a93ce821ca2db67fc816/tests/performance/dvp-scenario.canton&quot;
+      },
+      {
+        &quot;role&quot;: &quot;Test harness&quot;,
+        &quot;repository&quot;: &quot;https://github.com/punished-monaddle/cantonred&quot;,
+        &quot;commit&quot;: &quot;77c12ec4a53235144a75a93ce821ca2db67fc816&quot;,
+        &quot;path&quot;: &quot;tests/performance/dvp_run.py&quot;,
+        &quot;sha256&quot;: &quot;614bb23dee79e96b1b85d5cd433b710283213c841d40a79763489d882004b9f5&quot;,
+        &quot;revision_match&quot;: &quot;matched&quot;,
+        &quot;url&quot;: &quot;https://github.com/punished-monaddle/cantonred/blob/77c12ec4a53235144a75a93ce821ca2db67fc816/tests/performance/dvp_run.py&quot;
+      },
+      {
+        &quot;role&quot;: &quot;Scenario generator&quot;,
+        &quot;repository&quot;: &quot;https://github.com/punished-monaddle/cantonred&quot;,
+        &quot;commit&quot;: &quot;77c12ec4a53235144a75a93ce821ca2db67fc816&quot;,
+        &quot;path&quot;: &quot;tests/performance/dvp_workload.py&quot;,
+        &quot;sha256&quot;: &quot;d08f6578d0fbef84466410fdabd3b598085141273c90207b8a66a61509a7fc4c&quot;,
+        &quot;revision_match&quot;: &quot;matched&quot;,
+        &quot;url&quot;: &quot;https://github.com/punished-monaddle/cantonred/blob/77c12ec4a53235144a75a93ce821ca2db67fc816/tests/performance/dvp_workload.py&quot;
+      },
+      {
+        &quot;role&quot;: &quot;Scala workload driver&quot;,
+        &quot;repository&quot;: &quot;https://github.com/digital-asset/canton&quot;,
+        &quot;commit&quot;: &quot;df0ed749ffba3a483dd90991d7514b49a2f6d000&quot;,
+        &quot;path&quot;: &quot;community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala&quot;,
+        &quot;sha256&quot;: &quot;ea2a81a58a99a0888ae91c6b78607b0e8e103d283a24063b29f97b1bafb892d7&quot;,
+        &quot;revision_match&quot;: &quot;matched&quot;,
+        &quot;url&quot;: &quot;https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala&quot;
+      },
+      {
+        &quot;role&quot;: &quot;Scala performance runner&quot;,
+        &quot;repository&quot;: &quot;https://github.com/digital-asset/canton&quot;,
+        &quot;commit&quot;: &quot;df0ed749ffba3a483dd90991d7514b49a2f6d000&quot;,
+        &quot;path&quot;: &quot;community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala&quot;,
+        &quot;sha256&quot;: &quot;d79e2507aefe11392126cc736ea69e11f085bc35bf5ea6de41edf8715f8944bd&quot;,
+        &quot;revision_match&quot;: &quot;matched&quot;,
+        &quot;url&quot;: &quot;https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala&quot;
+      },
+      {
+        &quot;role&quot;: &quot;Daml trade model&quot;,
+        &quot;repository&quot;: &quot;https://github.com/digital-asset/canton&quot;,
+        &quot;commit&quot;: &quot;df0ed749ffba3a483dd90991d7514b49a2f6d000&quot;,
+        &quot;path&quot;: &quot;community/performance-driver/src/main/daml/main/Dvp/Trade.daml&quot;,
+        &quot;sha256&quot;: &quot;1ea32b58390949600e10cadb090f6e10a70068e6f8f3b5af5ec8c31f9c81b49a&quot;,
+        &quot;revision_match&quot;: &quot;matched&quot;,
+        &quot;url&quot;: &quot;https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/daml/main/Dvp/Trade.daml&quot;
+      }
+    ],
+    &quot;rendered_script&quot;: {
+      &quot;filename&quot;: &quot;workload.canton&quot;,
+      &quot;sha256&quot;: &quot;8713a6b9a5f3f4bfe1e4b0a4990cea60b88657c5793c049b545b83be260430a2&quot;
+    }
+  }
+}</pre></details></section><nav class="bottom-nav" aria-label="Adjacent runs"><a class="link" href="2eefcf5659fb5e92770c2e34.html">← Previous: Run 053 ↗</a><a class="link" href="fe13a8c02d9ea41449f5a61c.html">Next: Run 055 ↗</a></nav><footer class="footer"><p>Canton benchmark archive · Scala participants, Rust &amp; Scala synchronizers.<br>Generated from retained measurements. Raw logs and private machine details stay in the local archive.</p><p>UTC timestamps · CPU-s = aggregate CPU time<br>MiB = 1,048,576 bytes</p></footer></main></body></html>
