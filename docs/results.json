@@ -7583,6 +7583,119 @@
         "rate": 0.5,
         "warmup_cycles": 12
       }
+    },
+    {
+      "comparison_key": "87c71555aa241173387b28df73b3bc2345a5ecfab70a731ea0594c75c24b95b1",
+      "errors": [],
+      "instrumentation": "instrumented",
+      "limitations": [
+        "Fixed-rate batches per trader; batch size3; completed trades counted from ledger.",
+        "Separate warmup ceremony; measured setup excluded using upstream mode transitions.",
+        "CPU counters bracket logged boundaries with at most250ms extra at each edge.",
+        "Latency is Ledger command/batch latency for DvP, health.ping call latency for ping.",
+        "Unavailable CPU/RAM metrics are null; synchronizer-only DvP resource metrics exclude participants and PostgreSQL.",
+        "Instrumented timings are diagnostic; individual commands are not independent benchmark repetitions."
+      ],
+      "metrics": {
+        "completed_count": 180,
+        "cpu_seconds": 9.697477125,
+        "elapsed_seconds": 131.984,
+        "latency_ms": {
+          "count": 230,
+          "max": 135,
+          "mean": 86.01739130434783,
+          "p50": 86,
+          "p95": 113,
+          "p99": 125
+        },
+        "sampled_peak_rss_bytes": 53116928,
+        "throughput_per_second": 1.3638016729300522
+      },
+      "outcome": "pass",
+      "preset": "dvp-low-volume-v1",
+      "recorded_at": "2026-09-13T20:22:29.671370Z",
+      "revision": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+      "run_id": "00000094_20260913T202229.672163Z_dvp-low-volume-v1_rust_instrumented",
+      "scala_baseline": {
+        "differences": [],
+        "kind": "unavailable",
+        "run_id": null,
+        "scope": "No passing Scala baseline with the required workload, instrumentation, participant version, artifacts, Java and storage settings is archived."
+      },
+      "scenario": "dvp",
+      "synchronizer": "rust",
+      "test_source": {
+        "collection": "run-start",
+        "files": [
+          {
+            "commit": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+            "path": "tests/performance/dvp-scenario.canton",
+            "repository": "https://github.com/punished-monaddle/cantonred",
+            "revision_match": "matched",
+            "role": "Test scenario",
+            "sha256": "b27425f394978047c02f553ca24ed45dcd11f25e148a03bf8ccab1bfbb8ef0e8",
+            "url": "https://github.com/punished-monaddle/cantonred/blob/d9314441c10bbb3b38137e729d1ebf4647f9f33d/tests/performance/dvp-scenario.canton"
+          },
+          {
+            "commit": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+            "path": "tests/performance/dvp_run.py",
+            "repository": "https://github.com/punished-monaddle/cantonred",
+            "revision_match": "matched",
+            "role": "Test harness",
+            "sha256": "bbc1168c3deaf3f38dde72fdd9e0630dd187b8526db2dcae6fc70a63d41e22a5",
+            "url": "https://github.com/punished-monaddle/cantonred/blob/d9314441c10bbb3b38137e729d1ebf4647f9f33d/tests/performance/dvp_run.py"
+          },
+          {
+            "commit": "d9314441c10bbb3b38137e729d1ebf4647f9f33d",
+            "path": "tests/performance/dvp_workload.py",
+            "repository": "https://github.com/punished-monaddle/cantonred",
+            "revision_match": "matched",
+            "role": "Scenario generator",
+            "sha256": "6b8d31fcfba402638a775b98327dd27a5646e1cfb8a71cbd0d8cddb1f4cf05bd",
+            "url": "https://github.com/punished-monaddle/cantonred/blob/d9314441c10bbb3b38137e729d1ebf4647f9f33d/tests/performance/dvp_workload.py"
+          },
+          {
+            "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+            "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala",
+            "repository": "https://github.com/digital-asset/canton",
+            "revision_match": "matched",
+            "role": "Scala workload driver",
+            "sha256": "ea2a81a58a99a0888ae91c6b78607b0e8e103d283a24063b29f97b1bafb892d7",
+            "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/elements/dvp/TraderDriver.scala"
+          },
+          {
+            "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+            "path": "community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala",
+            "repository": "https://github.com/digital-asset/canton",
+            "revision_match": "matched",
+            "role": "Scala performance runner",
+            "sha256": "d79e2507aefe11392126cc736ea69e11f085bc35bf5ea6de41edf8715f8944bd",
+            "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/scala/com/digitalasset/canton/performance/PerformanceRunner.scala"
+          },
+          {
+            "commit": "df0ed749ffba3a483dd90991d7514b49a2f6d000",
+            "path": "community/performance-driver/src/main/daml/main/Dvp/Trade.daml",
+            "repository": "https://github.com/digital-asset/canton",
+            "revision_match": "matched",
+            "role": "Daml trade model",
+            "sha256": "1ea32b58390949600e10cadb090f6e10a70068e6f8f3b5af5ec8c31f9c81b49a",
+            "url": "https://github.com/digital-asset/canton/blob/df0ed749ffba3a483dd90991d7514b49a2f6d000/community/performance-driver/src/main/daml/main/Dvp/Trade.daml"
+          }
+        ],
+        "rendered_script": {
+          "filename": "workload.canton",
+          "sha256": "e84c67d41ae32ee290c2e5d0d9340a15d7295e766552a066a8384332151b4bbf"
+        },
+        "schema_version": 1
+      },
+      "validation": "revalidated",
+      "validation_scope": "Archived workload logs, CPU/RAM samples and recorded durability/exit assertions; not a fresh database, binary or trace audit.",
+      "workload": {
+        "assets": 20,
+        "cycles": 60,
+        "rate": 0.5,
+        "warmup_cycles": 12
+      }
     }
   ],
   "schema_version": 1,
